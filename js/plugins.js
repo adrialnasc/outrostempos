@@ -15,7 +15,7 @@
 
 
 /*!
- * Masonry PACKAGED v4.2.0
+ * Blocos PACKAGED v4.2.0
  * Cascading grid layout library
  * http://masonry.desandro.com
  * MIT License

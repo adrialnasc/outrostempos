@@ -1,59 +1,3 @@
-/* =================================================================== 
- *
- *  Sublime v1.0 Main Stylesheet
- *  06-10-2018
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # base style overrides
- *    ## links
- *  # typography & general theme styles
- *    ## Lists
- *    ## responsive video container
- *    ## floated image
- *    ## tables
- *    ## Spacing 
- *  # preloader
- *  # forms
- *    ## Style Placeholder Text
- *    ## Change Autocomplete styles
- *  # buttons
- *  # additional components
- *    ## alert box
- *    ## additional typo styles
- *    ## skillbars
- *  # reusable and common theme styles
- *    ## display headings
- *    ## section header
- *    ## grid overlay
- *  # header styles
- *    ## header logo
- *    ## main navigation
- *    ## mobile menu toggle 
- *  # home
- *    ## home content
- *    ## home video link
- *    ## home buttons
- *    ## home scroll
- *    ## home social
- *    ## home animations
- *  # about
- *    ## about process
- *  # services  
- *    ## services list
- *  # works
- *    ## bricks/masonry
- *  # clients
- *  # testimonials
- *  # contact
- *    ## contact social
- *  # footer
- *    ## copyright
- *    ## go top
- *
- * =================================================================== */
-
-
 /* ===================================================================
  * # base style overrides
  *
@@ -76,6 +20,56 @@ html {
   }
 
 }
+
+
+@font-face {
+      font-family: 'tutorial';
+      src: url('./font/tutorial.eot?79289888');
+      src: url('./font/tutorial.eot?79289888#iefix') format('embedded-opentype'),
+           url('./font/tutorial.woff?79289888') format('woff'),
+           url('./font/tutorial.ttf?79289888') format('truetype'),
+           url('./font/tutorial.svg?79289888#tutorial') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+     
+     
+    .demo-icon
+    {
+      font-family: "tutorial";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
+
 
 html,
 body {
@@ -116,7 +110,7 @@ a:active {
 
 
 /* ===================================================================
- * # typography & general theme styles
+ * # tipografia e tema em geral
  * 
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -363,7 +357,7 @@ hr {
 }
 
 /* ------------------------------------------------------------------- 
- * ## Lists
+ * ## listas
  * ------------------------------------------------------------------- */
 ol {
   list-style: decimal;
@@ -423,7 +417,7 @@ dd {
 }
 
 /* ------------------------------------------------------------------- 
- * ## responsive video container
+ * ## responsividade video
  * ------------------------------------------------------------------- */
 .video-container {
   position: relative;
@@ -498,7 +492,7 @@ td:last-child {
 }
 
 /* ------------------------------------------------------------------- 
- * ## Spacing 
+ * ## espaço
  * ------------------------------------------------------------------- */
 button,
 .btn {
@@ -724,7 +718,7 @@ form,
 
 
 /* ===================================================================
- * # forms
+ * # formulario
  *
  * ------------------------------------------------------------------- */
 fieldset {
@@ -904,7 +898,7 @@ label > input[type="radio"] {
 }
 
 /* ------------------------------------------------------------------- 
- * ## Change Autocomplete styles in Chrome
+ * ## Alterar estilos de preenchimento automático no Chrome
  * ------------------------------------------------------------------- */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -922,7 +916,7 @@ select:-webkit-autofill:focus {
 
 
 /* ===================================================================
- * # buttons
+ * # Botoes
  *
  * ------------------------------------------------------------------- */
 .btn,
@@ -967,7 +961,7 @@ input[type="button"]:focus {
   outline: 0;
 }
 
-/* button primary
+/* botoes primarios
  * ------------------------------------------------- */
 .btn.btn--primary,
 button.btn--primary,
@@ -993,7 +987,7 @@ input[type="button"].btn--primary:focus {
   border-color: #a56d3e;
 }
 
-/* button modifiers
+/* botoes modificados
  * ------------------------------------------------- */
 .btn.full-width,
 button.full-width {
@@ -1042,7 +1036,7 @@ input::-moz-focus-inner {
 
 
 /* =================================================================== 
- * # additional components
+ * # componetes adicionais
  *
  * ------------------------------------------------------------------- */
 
@@ -1110,7 +1104,7 @@ input::-moz-focus-inner {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line definition style 
+/* estilo de definição de linha
  * ----------------------------------------------- */
 .lining dt,
 .lining dd {
@@ -1137,7 +1131,7 @@ input::-moz-focus-inner {
   margin-left: -0.2em;
 }
 
-/* dictionary definition style 
+/* estilo de definição de dicionário 
  * ----------------------------------------------- */
 .dictionary-style dt {
   display: inline;
@@ -1159,7 +1153,7 @@ input::-moz-focus-inner {
 }
 
 /** 
- * Pull Quotes
+ * Pull Quotes // alerosnebaum help
  * -----------
  * markup:
  *
@@ -1683,7 +1677,7 @@ body.menu-is-open {
 }
 
 /* ------------------------------------------------------------------- 
- * ## main navigation 
+ * ## navegacao
  * ------------------------------------------------------------------- */
 .header-nav {
   z-index: 600;
@@ -1869,7 +1863,7 @@ body.menu-is-open {
   transform: rotate(45deg);
 }
 
-/* menu is open
+/* menu aberto
  * ----------------------------------------------- */
 .menu-is-open .header-nav {
   -webkit-transform: translate3d(0, 0, 0);
@@ -1895,7 +1889,7 @@ body.menu-is-open {
 }
 
 /* ------------------------------------------------------------------- 
- * ## mobile menu toggle 
+ * ## alternância do menu para celular
  * ------------------------------------------------------------------- */
 .header-menu-toggle {
   width: 48px;
@@ -2108,7 +2102,7 @@ body.menu-is-open {
 }
 
 /* ------------------------------------------------------------------- 
- * ## home content
+ * ## home conteudo
  * ------------------------------------------------------------------- */
 .home-content {
   display: table-cell;
@@ -2201,7 +2195,7 @@ body.menu-is-open {
 }
 
 /* ------------------------------------------------------------------- 
- * ## home buttons
+ * ## home botoes
  * ------------------------------------------------------------------- */
 .home-content__button {
   margin-top: 7.8rem;
@@ -2390,7 +2384,7 @@ html.no-csstransitions .home-content__main {
 }
 
 /* ------------------------------------------------------------------- 
- * ## home animations
+ * ## home animacoes
  * ------------------------------------------------------------------- */
 
 /* fade in */
@@ -2734,7 +2728,7 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # about
+ * # sobre
  *
  * ------------------------------------------------------------------- */
 .s-about {
@@ -2745,7 +2739,7 @@ html.no-csstransitions .home-content__main {
 }
 
 /* ------------------------------------------------------------------- 
- * ## about process
+ * ## sobre
  * ------------------------------------------------------------------- */
 .process {
   margin-top: 6.6rem;
@@ -2793,7 +2787,7 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * about
+ * sobre
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1000px) {
   .item-process:nth-child(2n+1) {
@@ -2865,7 +2859,7 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # services
+ * # servicos
  *
  * ------------------------------------------------------------------- */
 .s-services {
@@ -2875,7 +2869,7 @@ html.no-csstransitions .home-content__main {
 }
 
 /* ------------------------------------------------------------------- 
- * ## services list
+ * ## servicos lista
  * ------------------------------------------------------------------- */
 .services {
   margin-top: 9rem;
@@ -2910,7 +2904,7 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * services
+ * servicos
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
   .services {
@@ -3022,7 +3016,7 @@ html.no-csstransitions .home-content__main {
 }
 
 /* ------------------------------------------------------------------- 
- * ## bricks/masonry
+ * ## bricks/masonry/plugin
  * ------------------------------------------------------------------- */
 .masonry-wrap {
   margin-top: 7.2rem;
@@ -3269,7 +3263,7 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # clients
+ * # clientes
  *
  * ------------------------------------------------------------------- */
 .s-clients {
@@ -3324,7 +3318,7 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * clients
+ * clientes
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1000px) {
   .s-clients {
@@ -3606,7 +3600,7 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # contact
+ * # contato
  *
  * ------------------------------------------------------------------- */
 .s-contact {
@@ -3672,7 +3666,7 @@ html.no-csstransitions .home-content__main {
 }
 
 /* ------------------------------------------------------------------- 
- * ## contact social
+ * ## redes sociais
  * ------------------------------------------------------------------- */
 .contact-social {
   list-style: none;
@@ -3703,7 +3697,7 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * contact
+ * contato
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
   .contact-main {
@@ -3945,4 +3939,4 @@ footer a {
 
 }
 
-/*# sourceMappingURL=main.css.map */
+

@@ -25,7 +25,7 @@
     }
 
 
-   /* Preloader
+   /* Pré loader
     * -------------------------------------------------- */
     var ssPreloader = function() {
         
@@ -69,7 +69,7 @@
     };
 
 
-   /* OffCanvas Menu
+   /* Menu
     * ------------------------------------------------------ */
     var ssOffCanvas = function() {
 
@@ -101,7 +101,7 @@
     };
 
 
-   /* Masonry
+   /* Blocos
     * ---------------------------------------------------- */ 
     var ssMasonryFolio = function () {
         
@@ -116,7 +116,7 @@
     };
 
 
-   /* photoswipe
+   /* Photoswipe
     * ----------------------------------------------------- */
     var ssPhotoswipe = function() {
         var items = [],
@@ -169,7 +169,7 @@
     };
 
 
-   /* slick slider
+   /* Slick slider
     * ------------------------------------------------------ */
     var ssSlickSlider = function() {
         
@@ -212,7 +212,7 @@
     };
 
 
-   /* Alert Boxes
+   /* Box de Alerta
     * ------------------------------------------------------ */
     var ssAlertBoxes = function() {
 
@@ -223,7 +223,7 @@
     };
 
 
-   /* Animate On Scroll
+   /* Animação do scroll
     * ------------------------------------------------------ */
     var ssAOS = function() {
         
@@ -239,7 +239,7 @@
     };
 
 
-   /* Initialize
+   /* Inicialização
     * ------------------------------------------------------ */
     (function clInit() {
 

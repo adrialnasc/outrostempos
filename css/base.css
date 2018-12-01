@@ -1,33 +1,5 @@
-/* =================================================================== 
- *
- *  Sublime v1.0 Base Stylesheet
- *  06-10-2018
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # imports 
- *  # normalize  
- *  # basic/base setup styles
- *    ## Media
- *    ## Typography resets 
- *    ## links
- *    ## inputs
- *  # grid
- *    ## medium size devices
- *    ## tablets
- *    ## mobile devices
- *    ## small mobile devices
- *  # block grids
- *    ## medium size devices
- *    ## tablets
- *    ## mobile devices
- *  # MISC
- *
- * =================================================================== */
-
-
 /* ===================================================================
- * # imports 
+ * # adptativo
  *
  * ------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Nunito+Sans:300,400,400i,600,600i,700,700i");
@@ -499,7 +471,7 @@ textarea {
 }
 
 /* ------------------------------------------------------------------- 
- * ## medium size devices
+ * ## tamanhos médios
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
   .row .row {
@@ -608,7 +580,7 @@ textarea {
 }
 
 /* ------------------------------------------------------------------- 
- * ## mobile devices
+ * ## Mobile
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:600px) {
   .row {
@@ -659,10 +631,10 @@ textarea {
 }
 
 /* ------------------------------------------------------------------- 
- * ## small mobile devices
+ * ## Celulares menores
  * ------------------------------------------------------------------- */
 
-/* stack columns on small mobile devices
+/* coluna de celulares menores
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:400px) {
   .row .row {
@@ -698,8 +670,6 @@ textarea {
  * # block grids
  * ------------------------------------------------------------------- */
 
-/*   Equally-sized columns define at row level
- * ------------------------------------------------------------------- */
 [class*="block-"]:after {
   content: "";
   display: table;
@@ -726,10 +696,9 @@ textarea {
   width: 50%;
 }
 
-/**
- * Clearing for block grid columns. Allow columns with 
- * different heights to align properly.
- */
+/* ------------------------------------------------------------------- 
+ * ## permite ajustes diferentes
+ * ------------------------------------------------------------------- */
 .block-1-6 .col-block:nth-child(6n+1),
 .block-1-5 .col-block:nth-child(5n+1),
 .block-1-4 .col-block:nth-child(4n+1),
@@ -739,7 +708,7 @@ textarea {
 }
 
 /* ------------------------------------------------------------------- 
- * ## medium size devices
+ * ## telas de medio porte
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
   .block-m-1-6 .col-block {
@@ -825,7 +794,7 @@ textarea {
 }
 
 /* ------------------------------------------------------------------- 
- * ## mobile devices
+ * ## Mobiles
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:600px) {
   .block-mob-1-6 .col-block {
